@@ -1,5 +1,75 @@
 @import "./shared.scss";
 
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  background: green;
+  color: white;
+}
+
+h1 {
+  font-family: 'Cutive Mono', monospace;
+}
+
+  
+table {
+  background-color: green;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 5px solid green;
+}
+%shared-margPad {
+  padding: 0 0 1em 0;
+  margin: 0;
+}
+
+thead {
+  th {
+    @extend %shared-margPad;
+    color: white;
+    letter-spacing: 2px;
+    // font-family: 'Rock Salt', cursive;
+  }
+  th:nth-child(1) {
+    width: 5%;
+  }
+  th:nth-child(2) {
+    width: 5%;
+  }
+  th:nth-child(3) {
+    width: 40%;
+  }
+  th:nth-child(4) {
+    width: 25%;
+  }
+  th:nth-child(4) {
+    width: 25%;
+  }
+} 
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody {
+  img {
+    width: 100%;
+    border-radius: 50%;
+    border: solid 1px black;
+  }
+  td {
+    text-align: center;
+    color: $td-color;
+  }
+  tr:nth-child(odd) {
+    background-color: #d8c482;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #a5eca2;
+  }
+} 
+
 .App {
   text-align: center;
 }
@@ -11,5 +81,5 @@
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  to { transform: rotate(5000deg); }
 }
